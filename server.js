@@ -28,6 +28,9 @@ const data = require('./data.js');
 router.get('/books', (req, res) => {
   res.send(data);
 });
+router.get('/PING', (req, res) => {
+  res.send('PONG!');
+});
 
 // ################# //
 //  register router  //
