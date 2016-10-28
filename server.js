@@ -19,4 +19,4 @@ app.use(bodyParser().urlencoded({ extended: true }));
 app.use(bodyParser().json());
 app.use(cors());
 
-const data = require('./data.json');
+const data = require('./data.js');
