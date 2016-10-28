@@ -7,7 +7,7 @@ const cors = require('cors');
 
 //initializing express
 const app = express();
-const router = app.Router();
+const router = express.Router();
 
 // ################### //
 // APP configurations  //
@@ -15,8 +15,10 @@ const router = app.Router();
 
 // urlencoded({ extended: true }) for getting data from
 // html form
-app.use(bodyParser().urlencoded({ extended: true }));
-app.use(bodyParser().json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(cors());
 
 const data = require('./data.js');
+
+console.log(data);
